@@ -31,7 +31,6 @@
         </ul>  
     </nav>
     <section id="home">
-        <h2>Games:</h2>
         <ul class="games-photos">
             <li ng-repeat="game in games | filter:isName" class="game-photo">
                 <a href="{{game.link}}">
@@ -40,6 +39,7 @@
         </ul>
     </section>
     <section id="gamesList">
+        <h2>Games:</h2>
         <ul class="games-list">
             <li ng-repeat="game in games | filter:isName">
                 <a href="{{game.link}}">{{game.name}}</a>

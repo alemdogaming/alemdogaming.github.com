@@ -15,19 +15,16 @@
     }
 
 img.image-link {
-    /*background:#0000AA;*/
-    /*padding: 6px 6px;*/
     margin: 3px 3px;
     width: 240px;
     height: 240px;
     border: solid 6px #FFFFFF;
-    -webkit-filter: grayscale(1);
-    /*box-shadow:6px 6px 20px black;*/
+    -webkit-filter: grayscale(1) opacity(0.5);
 }
 
     img.image-link:hover {
         transition-duration: 500ms;
-        -webkit-filter: grayscale(0);
+        -webkit-filter: grayscale(0) opacity(1);
     }
 
 ul.games-list {
