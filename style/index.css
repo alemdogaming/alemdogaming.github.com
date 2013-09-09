@@ -21,13 +21,13 @@ img.image-link {
     width: 240px;
     height: 240px;
     border: solid 6px #FFFFFF;
-    -webkit-filter: brightness(0.7);
+    -webkit-filter: grayscale(1);
     /*box-shadow:6px 6px 20px black;*/
 }
 
     img.image-link:hover {
         transition-duration: 500ms;
-        -webkit-filter: brightness(1.0);
+        -webkit-filter: grayscale(0);
     }
 
 ul.games-list {
