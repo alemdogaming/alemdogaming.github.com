@@ -1,0 +1,53 @@
+﻿ul.games-photos {
+    list-style-type: none;
+    width: 100%;
+}
+
+    ul.games-photos:after {
+        content: "";
+        clear: both;
+        display: block;
+        height: 0px;
+    }
+
+    ul.games-photos li {
+        float: left;
+    }
+
+img.image-link {
+    /*background:#0000AA;*/
+    /*padding: 6px 6px;*/
+    margin: 3px 3px;
+    width: 240px;
+    height: 240px;
+    border: solid 6px #FFFFFF;
+    -webkit-filter: brightness(0.7);
+    /*box-shadow:6px 6px 20px black;*/
+}
+
+    img.image-link:hover {
+        transition-duration: 500ms;
+        -webkit-filter: brightness(1.0);
+    }
+
+ul.games-list {
+    list-style-type: none;
+}
+
+    ul.games-list li {
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    }
+
+        ul.games-list li a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+            ul.games-list li a:hover {
+                color: #0088A0;
+                text-decoration: none;
+            }
+
+section#home {
+    text-align: center;
+}

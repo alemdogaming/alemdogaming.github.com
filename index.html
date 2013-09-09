@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="RobertoGame" ng-controller="IndexController" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style/master.css">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/jquery-2.0.3.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/indexController.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Roberto
+        </h1>
+        <h3 class="italic">
+            Um game por semana
+        </h3>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a id="aHome" class="selected-menu-item" onclick="openRequiredSection('home');">Home</a></li>
+            <li><a id="aGamesList" onclick="openRequiredSection('gamesList');">Ver Lista</a></li>
+            <li><a id="aSobre" onclick="openRequiredSection('sobre');">Sobre o blog</a></li>
+            <li><a id="aAutor" onclick="openRequiredSection('autor');">Sobre o autor</a></li>
+            <li><a id="aFollowMe" onclick="openRequiredSection('followMe')">Follow Me</a></li>
+            <li><input type="search" ng-model="gameName" id="txtSearch" placeholder="Buscar jogo..." /></li>
+        </ul>  
+    </nav>
+    <section id="home">
+        <h2>Games:</h2>
+        <ul class="games-photos">
+            <li ng-repeat="game in games | filter:isName" class="game-photo">
+                <a href="{{game.link}}">
+                    <img class="image-link" src="{{game.src}}"></a>
+            </li>
+        </ul>
+    </section>
+    <section id="gamesList">
+        <ul class="games-list">
+            <li ng-repeat="game in games | filter:isName">
+                <a href="{{game.link}}">{{game.name}}</a>
+            </li>
+        </ul>
+    </section>
+    <section id="sobre">
+        <h2>Sobre o blog</h2>
+        <p>EUUIAUISUSIAUA</p>
+    </section>
+    <section id="autor">
+        <h2>Sobre o autor</h2>
+        <p>ahfoiahdfi</p>
+    </section>
+    <section id="followMe">
+        <h2>Follow on:</h2>
+        <p>facebook</p>
+        <p>twitter</p>
+    </section>
+    <footer>
+        <p>Não entendeu? <span class="italic">Clique nas imagens</span> ^^</p>
+    </footer>
+</body>
+</html>
+<script type="text/javascript">
+
+</script>
