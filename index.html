@@ -16,8 +16,7 @@
     <header>
         <h1>Roberto
         </h1>
-        <h3 class="italic">
-            Um game por semana
+        <h3 class="italic">Um game por semana
         </h3>
     </header>
     <nav id="menu">
@@ -27,8 +26,9 @@
             <li><a id="aSobre" onclick="openRequiredSection('sobre');">Sobre o blog</a></li>
             <li><a id="aAutor" onclick="openRequiredSection('autor');">Sobre o autor</a></li>
             <li><a id="aFollowMe" onclick="openRequiredSection('followMe')">Follow Me</a></li>
-            <li><input type="search" ng-model="gameName" id="txtSearch" placeholder="Buscar jogo..." /></li>
-        </ul>  
+            <li>
+                <input type="search" ng-model="gameName" id="txtSearch" placeholder="Buscar jogo..." /></li>
+        </ul>
     </nav>
     <section id="home">
         <ul class="games-photos">
@@ -47,8 +47,24 @@
         </ul>
     </section>
     <section id="sobre">
-        <h2>Sobre o blog</h2>
-        <p>EUUIAUISUSIAUA</p>
+        <img id="imgWelcome" src="img/bioshock-welcome.jpg" />
+        <div id="divSobreText">
+            <p>
+                O excesso de jogos lançados hoje em dia e a mudança da abordagem das revistas para acompanhar a velocidade da Internet reduziu a quantidade de análises profundas de games. Hoje este espaço é ocupado por alguns vloggers.
+            </p>
+            <p>
+                Sentindo a necessidade de preparar um material parecido na forma escrita, resolvi começar este projeto e dar a cada game um espaço próprio com análises mais completas do que a correria de hoje permite. Me limitarei a divulgar opiniões sobre acertos, erros e curiosidades de jogos que merecem ser eternos, seja pela sua qualidade ou pela falta dela, afinal, o importante é marcar a mente dos gamers!
+            </p>
+            <p>
+                Não espere notas nem lançamentos da semana, a ideia aqui é apenas não deixar um jogo que não passou em branco ficar assim, muito embora não exista uma data máxima de lançamento ou um status de fama para um jogo entrar aqui. Pode ser o novo GTA como pode ser uma ROM que eu achei por acaso na infinita lista de games do SNES.
+            </p>
+            <p>
+                Dito isto, seja bem-vindo a esta câmara de testes!
+            </p>
+        </div>
+        <div class="divVideo">
+            <iframe width="560" height="315" src="//www.youtube.com/embed/h9banEe8rV4" frameborder="0" allowfullscreen></iframe>
+        </div>
     </section>
     <section id="autor">
         <h2>Sobre o autor</h2>

@@ -20,11 +20,13 @@ img.image-link {
     height: 240px;
     border: solid 6px #FFFFFF;
     -webkit-filter: grayscale(1) opacity(0.5);
+    -moz-filter: grayscale(1) opacity(0.5);
 }
 
     img.image-link:hover {
         transition-duration: 500ms;
         -webkit-filter: grayscale(0) opacity(1);
+        -moz-filter: grayscale(0) opacity(1);
     }
 
 ul.games-list {
@@ -47,4 +49,15 @@ ul.games-list {
 
 section#home {
     text-align: center;
+}
+
+#divSobreText{
+    margin:40px;
+    width:90%;
+    text-align:justify;
+}
+
+#imgWelcome{
+    text-align:center;
+    width:100%;
 }
